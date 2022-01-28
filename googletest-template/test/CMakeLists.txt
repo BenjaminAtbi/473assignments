@@ -3,12 +3,11 @@ enable_testing()
 
 add_executable(runAllTests
   Dummy.cpp
-  # You can create new source files for your tests and add them here,
-  # or you can add your tests to Dummy.cpp. Either way will work.
+  Testcases.cpp
 )
 
 target_link_libraries(runAllTests
-  gmock gtest gtest_main
+  gmock gtest gtest_main 
   simple
 )
 
